@@ -16,8 +16,8 @@ def Rotation_img(src_img,angle_of_rotation):
         for j in range(w):
             # because rotating use r distance from center of rotate
             # you have to find r from current x,y position
-            #carefully with x_center - j not(j - x_center image will transform wrong direction -> opposite) 
-            #carefully with y_center - i not(i - y_center image will transform wrong direction -> opposite) 
+            #carefully if you want direction of rotate anticlockwise use x_center - j not(j - x_center image will transform wrong direction -> opposite) 
+            #carefully if you want direction of rotate anticlockwise use y_center - i not(i - y_center image will transform wrong direction -> opposite) 
             xy_mat = np.array([x_center - j,y_center - i])
             rotate_mat = np.dot(rotation_mat,xy_mat)
 
