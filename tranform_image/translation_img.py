@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
 import numpy as np
 
 def translation_img(src_img,shift_distance,shape_of_out_img):
